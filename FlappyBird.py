@@ -10,9 +10,9 @@ SCREEN = pygame.display.set_mode((SCREENWIDTH, SCREENHEIGHT))
 GROUNDY = SCREENHEIGHT * 0.8
 GAME_SPRITES = {}
 GAME_SOUNDS = {}
-PLAYER = 'C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird-assets/sprites/redbird-midflap.png'
-BACKGROUND = 'C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird-assets/sprites/background-night.png'
-PIPE = 'C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird-assets/sprites/pipe-red.png'
+PLAYER = 'C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird/sprites/redbird-midflap.png'
+BACKGROUND = 'C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird/sprites/background-night.png'
+PIPE = 'C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird/sprites/pipe-red.png'
 
 
 
@@ -193,30 +193,30 @@ if __name__ == "__main__":
     FPSCLOCK = pygame.time.Clock()
     pygame.display.set_caption('Flappy Bird')
     GAME_SPRITES['numbers'] = ( 
-        pygame.image.load("C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird-assets/sprites/0.png").convert_alpha(),
-        pygame.image.load("C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird-assets/sprites/1.png").convert_alpha(),
-        pygame.image.load("C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird-assets/sprites/2.png").convert_alpha(),
-        pygame.image.load("C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird-assets/sprites/3.png").convert_alpha(),
-        pygame.image.load("C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird-assets/sprites/4.png").convert_alpha(),
-        pygame.image.load("C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird-assets/sprites/5.png").convert_alpha(),
-        pygame.image.load("C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird-assets/sprites/6.png").convert_alpha(),
-        pygame.image.load("C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird-assets/sprites/7.png").convert_alpha(),
-        pygame.image.load("C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird-assets/sprites/8.png").convert_alpha(),
-        pygame.image.load("C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird-assets/sprites/9.png").convert_alpha(),
+        pygame.image.load("C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird/sprites/0.png").convert_alpha(),
+        pygame.image.load("C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird/sprites/1.png").convert_alpha(),
+        pygame.image.load("C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird/sprites/2.png").convert_alpha(),
+        pygame.image.load("C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird/sprites/3.png").convert_alpha(),
+        pygame.image.load("C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird/sprites/4.png").convert_alpha(),
+        pygame.image.load("C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird/sprites/5.png").convert_alpha(),
+        pygame.image.load("C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird/sprites/6.png").convert_alpha(),
+        pygame.image.load("C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird/sprites/7.png").convert_alpha(),
+        pygame.image.load("C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird/sprites/8.png").convert_alpha(),
+        pygame.image.load("C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird/sprites/9.png").convert_alpha(),
     )
 
-    GAME_SPRITES['message'] =pygame.image.load("C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird-assets/sprites/message.png").convert_alpha()
-    GAME_SPRITES['base'] =pygame.image.load('C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird-assets/sprites/base.png').convert_alpha()
+    GAME_SPRITES['message'] =pygame.image.load("C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird/sprites/message.png").convert_alpha()
+    GAME_SPRITES['base'] =pygame.image.load('C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird/sprites/base.png').convert_alpha()
     GAME_SPRITES['pipe'] =(pygame.transform.rotate(pygame.image.load( PIPE).convert_alpha(), 180), 
     pygame.image.load(PIPE).convert_alpha()
     )
 
     # Game sounds
-    GAME_SOUNDS['die'] = pygame.mixer.Sound('C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird-assets/audio/die.wav')
-    GAME_SOUNDS['hit'] = pygame.mixer.Sound('C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird-assets/audio/hit.wav')
-    GAME_SOUNDS['point'] = pygame.mixer.Sound('C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird-assets/audio/point.wav')
-    GAME_SOUNDS['swoosh'] = pygame.mixer.Sound('C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird-assets/audio/swoosh.wav')
-    GAME_SOUNDS['wing'] = pygame.mixer.Sound('C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird-assets/audio/wing.wav')
+    GAME_SOUNDS['die'] = pygame.mixer.Sound('C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird/audio/die.wav')
+    GAME_SOUNDS['hit'] = pygame.mixer.Sound('C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird/audio/hit.wav')
+    GAME_SOUNDS['point'] = pygame.mixer.Sound('C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird/audio/point.wav')
+    GAME_SOUNDS['swoosh'] = pygame.mixer.Sound('C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird/audio/swoosh.wav')
+    GAME_SOUNDS['wing'] = pygame.mixer.Sound('C:/Users/adity/OneDrive/Desktop/Coding and Projects/Python/flappy-bird/audio/wing.wav')
 
     GAME_SPRITES['background'] = pygame.image.load(BACKGROUND).convert()
     GAME_SPRITES['player'] = pygame.image.load(PLAYER).convert_alpha()
